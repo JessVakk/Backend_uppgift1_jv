@@ -147,8 +147,7 @@ namespace WebApi.Controllers
                 if (issueEntity != null)
                 {
                     
-                    issueEntity.Subject = req.Subject;
-                    issueEntity.Description = req.Description;
+                    
                     issueEntity.Modified = DateTime.Now;
 
                     if (!string.IsNullOrEmpty(req.Comment))
@@ -192,7 +191,7 @@ namespace WebApi.Controllers
                                 Email = issueEntity.Customer.Email,
                                 PhoneNumber = issueEntity.Customer.PhoneNumber
                             },
-                            
+                        
                     });
                 }
                 
